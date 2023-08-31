@@ -1,12 +1,12 @@
-import tkinter as tk
-import math
+import tkinter as tk #imports necessary tkinter module
+import math #imports necessary math modules for the calculations
 
-def button_click(number):
+def button_click(number): #the button is called when a digit or the decimal point button is clicked
     current = entry.get()
     entry.delete(0, tk.END)
     entry.insert(0, current + str(number))
 
-def button_clear():
+def button_clear(): #called when clear button is clicked
     entry.delete(0, tk.END)
 
 def button_equal():
